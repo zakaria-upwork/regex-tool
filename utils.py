@@ -13,8 +13,10 @@ path = ChromeDriverManager().install()
 def create_driver() -> webdriver.Chrome:
     service = Service(path)
     options = Options()
-    options.add_argument("--headless")
-    options.add_argument('log-level=3')
+    options.add_argument("--headless") # Hides the browser window.
+    options.add_argument("--no-sandbox")  # Bypass OS security model.
+    options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems.
+    options.add_argument('log-level=3') # Suppress console logs.
     driver = webdriver.Chrome(service=service, options=options)
     return driver
 # from utils import create_driver

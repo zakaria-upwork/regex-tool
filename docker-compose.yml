@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+    app_new:
+        build: .
+        image: app
+        ports:
+            - "8000:8000"
+
