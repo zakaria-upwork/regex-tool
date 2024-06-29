@@ -3,6 +3,8 @@ services:
     app_new:
         build: .
         image: app
+        volumes:
+            - ./logs:/app/logs
         ports:
             - "8000:8000"
 
