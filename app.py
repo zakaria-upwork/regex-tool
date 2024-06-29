@@ -41,9 +41,5 @@ def search_regex(pattern: str, url: str):
     return {"matches": links}
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-=======
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8008)
->>>>>>> 87f79850474233819186a6fff5fcf359766a5ef6
