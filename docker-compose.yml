@@ -1,10 +1,10 @@
 version: '3.4'
 services:
-    app_new:
+    regex_validator_app:
         build: .
         image: app
         volumes:
             - ./logs:/app/logs
         ports:
-            - "8000:8000"
+            - "8008:8008"
 
